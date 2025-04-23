@@ -188,7 +188,7 @@ const DailyProblemPage = () => {
   return (
     <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg w-10/12">
       <h2 className="text-5xl font-bold text-center mt-10 mb-10 text-red-600">
-        Daily Problem
+         Problems
       </h2>
       <div className="flex items-center gap-3 mb-6 bg-white border-2 border-red-500 rounded-full px-4 py-3 shadow-sm hover:border-red-600 transition duration-300 w-fit">
         <FaFilter className="text-red-500 text-xl" />

@@ -1,124 +1,125 @@
-import { useState } from 'react';
+import { useState } from "react";
+import Lottie from "lottie-react";
+import signupAnimation from "../../../public/lottie-animation1.json"; // Make sure this path is correct
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
-    fullName: '',
-    puId: '',
-    codeforcesHandle: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
+    fullName: "",
+    puId: "",
+    codeforcesHandle: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
   });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Submitted Data:', formData);
+    console.log("Submitted Data:", formData);
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-white px-4">
-      <div className="bg-red-50 w-full max-w-md p-8 rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold text-center text-red-600 mb-8">
-          Sign Up - PU Problem Solving Club
-        </h2>
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label className="block mb-1 text-red-700 font-medium">Full Name</label>
-            <input
-              type="text"
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r  px-4">
+      <div className="bg-white  w-full max-w-6xl rounded-lg  flex flex-col md:flex-row overflow-hidden shadow-xl">
+        {/* Form Section */}
+        <div className="w-full md:w-1/2 p-8">
+          <h2 className="text-3xl font-bold text-center text-red-600 mb-6">
+            Sign Up - PU Programming Club
+          </h2>
+
+          <form onSubmit={handleSubmit} className="space-y-5 m-10">
+            <InputField
+              label="Full Name"
               name="fullName"
-              required
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
               placeholder="John Doe"
+              onChange={handleChange}
             />
-          </div>
-
-          <div>
-            <label className="block mb-1 text-red-700 font-medium">PU Student ID</label>
-            <input
-              type="text"
+            <InputField
+              label="PU Student ID"
               name="puId"
-              required
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
               placeholder="PU123456"
+              onChange={handleChange}
             />
-          </div>
-
-          <div>
-            <label className="block mb-1 text-red-700 font-medium">Codeforces Handle</label>
-            <input
-              type="text"
+            <InputField
+              label="Codeforces Handle"
               name="codeforcesHandle"
-              required
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
               placeholder="codeforces_user"
+              onChange={handleChange}
             />
-          </div>
-
-          <div>
-            <label className="block mb-1 text-red-700 font-medium">Email</label>
-            <input
-              type="email"
+            <InputField
+              label="Email"
               name="email"
-              required
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
+              type="email"
               placeholder="john@example.com"
+              onChange={handleChange}
             />
-          </div>
-
-          <div>
-            <label className="block mb-1 text-red-700 font-medium">Password</label>
-            <input
-              type="password"
+            <InputField
+              label="Password"
               name="password"
-              required
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
-              placeholder="••••••••"
-            />
-          </div>
-
-          <div>
-            <label className="block mb-1 text-red-700 font-medium">Confirm Password</label>
-            <input
               type="password"
-              name="confirmPassword"
-              required
-              onChange={handleChange}
-              className="w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
               placeholder="••••••••"
+              onChange={handleChange}
             />
-          </div>
+            <InputField
+              label="Confirm Password"
+              name="confirmPassword"
+              type="password"
+              placeholder="••••••••"
+              onChange={handleChange}
+            />
 
-          <button
-            type="submit"
-            className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition"
-          >
-            Create Account
-          </button>
-        </form>
+            <button
+              type="submit"
+              className="w-full bg-red-600 text-white py-2 rounded-md hover:bg-red-700 transition"
+            >
+              Create Account
+            </button>
+          </form>
 
-        <p className="text-center text-sm text-gray-600 mt-4">
-          Already a member?{' '}
-          <span className="text-red-600 font-semibold cursor-pointer hover:underline">
-            Login
-          </span>
-        </p>
+          <p className="text-center text-sm text-gray-600 mt-4">
+            Already a member?{" "}
+            <Link
+              to="/signin"
+              className="text-red-600 font-semibold cursor-pointer hover:underline"
+            >
+              Sign In
+            </Link>
+          </p>
+        </div>
+
+        {/* Animation Section */}
+        <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-r from-red-50 to-red-700 p-6">
+          <Lottie
+            animationData={signupAnimation}
+            loop={true}
+            className="w-full max-w-md"
+          />
+        </div>
       </div>
     </section>
   );
 };
+
+const InputField = ({ label, name, placeholder, onChange, type = "text" }) => (
+  <div>
+    <label className="block mb-1 text-red-700 font-medium">{label}</label>
+    <input
+      type={type}
+      name={name}
+      required
+      onChange={onChange}
+      className="w-full px-4 py-2 border border-red-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-400"
+      placeholder={placeholder}
+    />
+  </div>
+);
 
 export default Signup;

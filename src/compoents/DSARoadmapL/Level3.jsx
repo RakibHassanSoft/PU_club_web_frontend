@@ -394,13 +394,13 @@ const Level3 = () => {
               <Link>
               <li
                 key={problem.id}
-                className="bg-white border-2 border-transparent p-6 rounded-3xl shadow-lg hover:bg-white hover:border-red-600 hover:text-red-600 hover:shadow-lg transition-all ease-in-out duration-300 transform hover:scale-105"
+                className="bg-white border-2 border-transparent p-2 rounded-xl shadow-lg hover:bg-white hover:border-red-600 hover:text-red-600 hover:shadow-lg transition-all ease-in-out duration-300 transform hover:scale-105"
               >
                 <span
                   href={problem.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-semibold text-lg"
+                  className="font-semibold text-lg text-gray-700"
                 >
                   {problem.name}
                 </span>

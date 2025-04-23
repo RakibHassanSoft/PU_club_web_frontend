@@ -9,7 +9,7 @@ export const navLinks = [
     //     { name: 'DSA Course', path: '/courses/dsa' },
     //   ]
     // },
-    { name: 'Daily Problem', path: '/daily-problems' },
+    { name: 'Problems', path: '/daily-problems' },
     { name: 'STest', path: '/s-test' },
     { name: 'Ranking', path: '/ranking' },
     { name: 'Resources ', path: '/resources' },

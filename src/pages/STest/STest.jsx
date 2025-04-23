@@ -140,7 +140,7 @@ const STest = () => {
   return (
     <div className="min-h-screen bg-white py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-xl p-6 md:p-10 border border-red-200">
+        <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10  ">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-orange-500 mb-10">
             Codeforces Self Test
           </h1>
