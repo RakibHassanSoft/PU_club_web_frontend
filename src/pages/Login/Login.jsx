@@ -36,7 +36,7 @@ const Login = () => {
       <div className="flex flex-col md:flex-row items-center bg-white rounded-lg  max-w-5xl w-full overflow-hidden  shadow-xl">
         
         {/* Animation Section */}
-        <div className="w-full md:w-1/2 flex justify-center items-center p-6 bg-gradient-to-l from-red-50 to-red-700">
+        <div className="w-full md:w-1/2 flex justify-center items-center p-6 bg-gradient-to-r from-red-500 to-red-800">
           <Lottie options={lottieOptions} height={400} width={450} />
         </div>
 

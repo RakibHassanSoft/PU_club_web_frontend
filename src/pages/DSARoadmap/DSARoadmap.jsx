@@ -29,7 +29,7 @@ const DSARoadmap = () => {
         </button>
       </div>
 
-      <div className="hidden md:flex justify-end p-4 bg-green-600 text-white md:w-full md:fixed md:top-0 z-30 ">
+      <div className=" md:flex justify-end p-4 bg-green-600 text-white md:w-full md:fixed md:top-0 z-5 ">
         <button
           className="bg-red-600 text-white px-3 py-1 rounded shadow"
           onClick={() => setSidebarVisible(!sidebarVisible)}
@@ -40,7 +40,7 @@ const DSARoadmap = () => {
 
       {/* Sidebar */}
       {sidebarVisible && (
-        <div className="fixed   w-full md:w-1/6 space-y-4 bg-white p-4 shadow-md top-14 md:top-20  left-0 md:h-[42rem] lg:h-[26rem]  overflow-y-auto z-5">
+        <div className="lg:fixed   w-full md:w-1/6 space-y-4 bg-white p-4 shadow-md md:top-20  left-0 md:h-[42rem] lg:h-[26rem]  overflow-y-auto z-5">
           {["DSA Roadmap", "Level 1", "Level 2", "Level 3", "Level 4"].map(
             (label, index) => (
               <button

@@ -5,6 +5,7 @@ import {
   FaCode,
   FaCuttlefish,
   FaPython,
+  FaJs,
 } from "react-icons/fa";
 import { SiCplusplus } from "react-icons/si";
 const resources = {
@@ -236,6 +237,61 @@ const resources = {
       logo: "https://www.topcoder.com/wp-content/themes/tcs-responsive-theme/assets/images/favicon.ico",
     },
   ],
+  js: [
+    // --- Bangla Resources First ---
+    {
+      title: "Learn with Sumit – JavaScript Bangla Series",
+      link: "https://www.youtube.com/playlist?list=PLHiZ4m8vCp9MJg0W4-3nZ5pM2k23lOFaz",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKbtfLBn2bP4qjXbNpl1x_3z_lCWJzShmHS2zA=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "Code With Hridoy – JavaScript Bangla Tutorial",
+      link: "https://www.youtube.com/playlist?list=PL_XxuZqN0xVD1XoVX7dK3cWzD7YbD6oCx",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKbI5UPEZIRQuPtGvS4lA7jqzAev8rEfxUzGynTz=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "Anisul Islam – JavaScript Full Bangla Tutorial",
+      link: "https://www.youtube.com/playlist?list=PLgH5QX0i9K3o8lgHAXNyte_Gi4zvP2r5S",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ3OfVaHHFGh6g1IthOcn1UBVuK2VvqYxMqlsKi=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "Stack Learner – JavaScript Bangla Course",
+      link: "https://www.youtube.com/playlist?list=PLoV4KCy9kbh8R0MyjY5bpDYhE3GEpHkzK",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ2vK0rWqZ5DPKtn3TxNUnzVuSvJD-2uG9TClhQ=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "Programming Hero – JavaScript Basic (Bangla)",
+      link: "https://www.youtube.com/playlist?list=PLrOyM49ctTx9uKTPgVVwLxKxWkQOXGQvZ",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKaMLtNGyN2zUvAI90aFQFguRf3KgXixpOKHZjXimA=s176-c-k-c0x00ffffff-no-rj",
+    },
+  
+    // --- English Resources After ---
+    {
+      title: "freeCodeCamp – JavaScript Full Course (English)",
+      link: "https://www.youtube.com/watch?v=jS4aFq5-91M",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKaPB-BuQnEDf6oLK04EmCWLlzHK4O2QGkk9a7ZV5Q=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "JavaScript.info – The Modern JavaScript Tutorial",
+      link: "https://javascript.info/",
+      logo: "https://javascript.info/img/favicon/apple-touch-icon-precomposed.png",
+    },
+    {
+      title: "MDN Web Docs – JavaScript Guide",
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+      logo: "https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png",
+    },
+    {
+      title: "W3Schools – JavaScript Tutorial",
+      link: "https://www.w3schools.com/js/",
+      logo: "https://www.w3schools.com/favicon.ico",
+    },
+    {
+      title: "Traversy Media – JavaScript Crash Course (English)",
+      link: "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKY1pNU6n2EDEInBq0QbeABsJYrhOKuZ8dt4kRYN=s176-c-k-c0x00ffffff-no-rj",
+    }
+  ],  
   icpc: [
     {
       title: "Apna College – Codeforces Solutions Playlist",
@@ -321,6 +377,62 @@ const resources = {
       logo: "https://ocw.mit.edu/images/logo_ocw-default.png",
     },
   ],
+  webdev: [
+    // --- Bangla Resources First ---
+    {
+      title: "Learn with Sumit – Web Development Full Course (Bangla)",
+      link: "https://www.youtube.com/playlist?list=PLHiZ4m8vCp9MFjMRp9EEHWKArbi0wdgXG",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKbtfLBn2bP4qjXbNpl1x_3z_lCWJzShmHS2zA=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "Programming Hero – Complete Web Development Course (Bangla)",
+      link: "https://web.programming-hero.com/",
+      logo: "https://web.programming-hero.com/images/hero-logo.png",
+    },
+    {
+      title: "Code with Hridoy – Web Development Tutorials (Bangla)",
+      link: "https://www.youtube.com/playlist?list=PL_XxuZqN0xVAGWmipjxEwlEUPg_hPhvKf",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKbI5UPEZIRQuPtGvS4lA7jqzAev8rEfxUzGynTz=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "Anisul Islam – Web Development Bangla Series",
+      link: "https://www.youtube.com/playlist?list=PLgH5QX0i9K3rNOJvRkGFkBJZCuPqCB5H6",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ3OfVaHHFGh6g1IthOcn1UBVuK2VvqYxMqlsKi=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "Stack Learner – Professional Web Development Course (Bangla)",
+      link: "https://www.youtube.com/c/StackLearner",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ2vK0rWqZ5DPKtn3TxNUnzVuSvJD-2uG9TClhQ=s176-c-k-c0x00ffffff-no-rj",
+    },
+  
+    // --- English Resources After ---
+    {
+      title: "freeCodeCamp – Responsive Web Design Certification",
+      link: "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKaPB-BuQnEDf6oLK04EmCWLlzHK4O2QGkk9a7ZV5Q=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "The Odin Project – Full Web Development Path",
+      link: "https://www.theodinproject.com/paths/full-stack-javascript",
+      logo: "https://www.theodinproject.com/favicon-32x32.png",
+    },
+    {
+      title: "Traversy Media – Web Development Crash Course",
+      link: "https://www.youtube.com/watch?v=UB1O30fR-EE",
+      logo: "https://yt3.googleusercontent.com/ytc/APkrFKY1pNU6n2EDEInBq0QbeABsJYrhOKuZ8dt4kRYN=s176-c-k-c0x00ffffff-no-rj",
+    },
+    {
+      title: "MDN Web Docs – Web Development Tutorials",
+      link: "https://developer.mozilla.org/en-US/docs/Learn",
+      logo: "https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png",
+    },
+    {
+      title: "W3Schools – Full Web Development Tutorials",
+      link: "https://www.w3schools.com/",
+      logo: "https://www.w3schools.com/favicon.ico",
+    }
+  ]
+  
 };
 
 
@@ -391,6 +503,16 @@ const Resource = () => {
           title="Job Interview Prep"
           items={resources.job}
           icon={<FaBriefcase size={28} />}
+        />
+        <Section
+          title="JavaScript Resources"
+          items={resources.js}
+          icon={<FaJs size={28} />}
+        />
+        <Section
+          title="Web Development Resources"
+          items={resources.webdev}
+          icon={<FaCode size={28} />}
         />
       </div>
     </div>
