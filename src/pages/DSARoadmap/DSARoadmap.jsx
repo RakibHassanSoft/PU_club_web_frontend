@@ -29,14 +29,7 @@ const DSARoadmap = () => {
         </button>
       </div>
 
-      <div className=" md:flex justify-end p-4 bg-green-600 text-white md:w-full md:fixed md:top-0 z-5 ">
-        <button
-          className="bg-red-600 text-white px-3 py-1 rounded shadow"
-          onClick={() => setSidebarVisible(!sidebarVisible)}
-        >
-          {sidebarVisible ? "Close" : "Menu"}
-        </button>
-      </div>
+      
 
       {/* Sidebar */}
       {sidebarVisible && (
@@ -64,7 +57,7 @@ const DSARoadmap = () => {
       <div
         className={`w-full ${
           sidebarVisible ? "md:w-2/3" : "md:w-full"
-        } p-4 pt-40 md:p-6`}
+        } p-4 md:p-6`}
       >
         {activeLevel === 0 && <DSARoadmapCL />}
         {activeLevel === 1 && <Level1 />}

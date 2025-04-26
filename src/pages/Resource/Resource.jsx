@@ -12,7 +12,7 @@ const resources = {
   c: [
     {
       title: "Apna College – C Programming Playlist",
-      link: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop",
+      link: "https://www.youtube.com/watch?v=irqbmMNs2Bo&list=PLwAbb5jODyVmGiz9OctZTKrT32N3MzwAD",
       logo: "https://tse3.mm.bing.net/th?id=OIP.g6QD-mce5w03KqSX4omgfwAAAA&rs=1&pid=ImgDetMain",
     },
     {
@@ -22,7 +22,7 @@ const resources = {
     },
     {
       title: "Neso Academy – C Programming (YouTube)",
-      link: "https://www.youtube.com/playlist?list=PLBlnK6fEyqRgLLlzdgiTUKULK3z4bklxV",
+      link: "https://www.youtube.com/watch?v=rLf3jnHxSmU&list=PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKYtQGvuEvZkmAx3L3gJ1R8D4UHR_tqbtv8UNyoEjg=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -37,7 +37,7 @@ const resources = {
     },
     {
       title: "CodeWithHarry – C Tutorial (YouTube)",
-      link: "https://www.youtube.com/playlist?list=PLu0W_9lII9aiL0kysYlfSOUgY5rNlOhUd",
+      link: "https://www.youtube.com/watch?v=7Dh73z3icd8&list=PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKZzIYMKfB3YlP3Z9IhF4xSSo3NZToRmBGLNU03q=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -46,8 +46,8 @@ const resources = {
       logo: "https://www.programiz.com/sites/all/themes/programiz/assets/images/logo.png",
     },
     {
-      title: "C Programming Absolute Beginner (freeCodeCamp YouTube)",
-      link: "https://www.youtube.com/watch?v=KJgsSFOSQv0",
+      title: "C Programming Absolute Beginner ",
+      link: "https://www.youtube.com/watch?v=KnvbUiSxvbM&list=PL98qAXLA6aftD9ZlnjpLhdQAOFI8xIB6e",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKaPB-BuQnEDf6oLK04EmCWLlzHK4O2QGkk9a7ZV5Q=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -59,22 +59,17 @@ const resources = {
       title: "CodingUnit – C Programming Tutorial",
       link: "https://www.codingunit.com/c-tutorial",
       logo: "https://www.codingunit.com/wp-content/themes/atahualpa/images/logo.png",
-    },
-    {
-      title: "C Programming Notes – notesformsc",
-      link: "https://notesformsc.org/c-programming-notes/",
-      logo: "https://notesformsc.org/wp-content/uploads/2019/01/cropped-logo.png",
-    },
+    }
   ],
   cpp: [
     {
       title: "Apna College – C++ Complete Course",
-      link: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
+      link: "https://www.youtube.com/watch?v=z9bZufPHFLU&list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
       logo: "https://tse3.mm.bing.net/th?id=OIP.g6QD-mce5w03KqSX4omgfwAAAA&rs=1&pid=ImgDetMain",
     },
     {
       title: "C++ STL Series – CodeHelp (YouTube)",
-      link: "https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA",
+      link: "https://www.youtube.com/watch?v=WQoB2z67hvY&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKa1TbGicT8UakUBVK-V3AiSRnngHkCQe7mVGnqmfA=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -89,23 +84,18 @@ const resources = {
     },
     {
       title: "freeCodeCamp – C++ Full Course (YouTube)",
-      link: "https://www.youtube.com/watch?v=vLnPwxZdW4Y",
+      link: "https://www.youtube.com/watch?v=vLnPwxZdW4Y&list=PLQgT9G4SVR-LQfix29B8zYvM-Pk-adPG_",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKaPB-BuQnEDf6oLK04EmCWLlzHK4O2QGkk9a7ZV5Q=s176-c-k-c0x00ffffff-no-rj",
     },
     {
       title: "CodeWithHarry – C++ Tutorial (YouTube)",
-      link: "https://www.youtube.com/playlist?list=PLu0W_9lII9aiL0kysYlfSOUgY5rNlOhUd",
+      link: "https://www.youtube.com/watch?v=j8nAHeVKL08&list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKZzIYMKfB3YlP3Z9IhF4xSSo3NZToRmBGLNU03q=s176-c-k-c0x00ffffff-no-rj",
     },
     {
       title: "Programiz – Learn C++",
       link: "https://www.programiz.com/cpp-programming",
       logo: "https://www.programiz.com/sites/all/themes/programiz/assets/images/logo.png",
-    },
-    {
-      title: "C++ Notes for Professionals",
-      link: "https://goalkicker.com/CPlusPlusBook/",
-      logo: "https://goalkicker.com/static/books/CPlusPlusBook/CPlusPlusBookCover.png",
     },
     {
       title: "TutorialsPoint – C++",
@@ -126,7 +116,7 @@ const resources = {
   python: [
     {
       title: "Apna College – Python Course",
-      link: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe7uOEC3DWHnI7y3S0UVV0Kv",
+      link: "https://www.youtube.com/watch?v=t2_Q2BRzeEE&list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0",
       logo: "https://tse3.mm.bing.net/th?id=OIP.g6QD-mce5w03KqSX4omgfwAAAA&rs=1&pid=ImgDetMain",
     },
     {
@@ -141,7 +131,7 @@ const resources = {
     },
     {
       title: "freeCodeCamp – Python for Beginners (YouTube)",
-      link: "https://www.youtube.com/watch?v=rfscVS0vtbw",
+      link: "https://www.youtube.com/watch?v=eWRfhZUzrAc&list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKaPB-BuQnEDf6oLK04EmCWLlzHK4O2QGkk9a7ZV5Q=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -161,7 +151,7 @@ const resources = {
     },
     {
       title: "Corey Schafer Python Tutorials (YouTube)",
-      link: "https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p",
+      link: "https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ4HzoXL1sW5B2eRXhMY5ShT_3jz4W1p_VTFzqKGQ=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -182,8 +172,13 @@ const resources = {
   ],
   codeforces: [
     {
-      title: "Apna College – Codeforces Solutions Playlist",
-      link: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
+      title: "Phitron Complete DSA Course (Bangla)",
+      link: "https://phitron.io/",
+      logo: "https://web.programming-hero.com/images/hero-logo.png",
+    },,
+    {
+      title: "TLE Solutions Playlist",
+      link: "https://www.youtube.com/watch?v=UsH23t9i9i8&list=PLcXpkI9A-RZLUfBSNp-YQBCOezZKbDSgB",
       logo: "https://tse3.mm.bing.net/th?id=OIP.g6QD-mce5w03KqSX4omgfwAAAA&rs=1&pid=ImgDetMain",
     },
     {
@@ -191,21 +186,7 @@ const resources = {
       link: "https://codeforces.com/blog/entry/63679",
       logo: "https://sta.codeforces.com/s/84889/images/codeforces-logo-with-telegram.png",
     },
-    {
-      title: "Codeforces Tutorial Playlist (YouTube)",
-      link: "https://www.youtube.com/playlist?list=PLl0KD3g-oDOGJUdmhFk19LaPgrfmAGQfo",
-      logo: "https://yt3.googleusercontent.com/ytc/APkrFKYtQGvuEvZkmAx3L3gJ1R8D4UHR_tqbtv8UNyoEjg=s176-c-k-c0x00ffffff-no-rj",
-    },
-    {
-      title: "Codeforces Contests",
-      link: "https://codeforces.com/contests",
-      logo: "https://sta.codeforces.com/s/84889/images/codeforces-logo-with-telegram.png",
-    },
-    {
-      title: "Errichto’s CP Playlist (YouTube)",
-      link: "https://www.youtube.com/c/Errichto/videos",
-      logo: "https://yt3.googleusercontent.com/ytc/APkrFKa4bLVGgZoewFYKvDZnPdo9PYsNv0Z0wfdVWsw_wA=s176-c-k-c0x00ffffff-no-rj",
-    },
+   
     {
       title: "Codeforces Gym",
       link: "https://codeforces.com/gyms",
@@ -241,22 +222,18 @@ const resources = {
     // --- Bangla Resources First ---
     {
       title: "Learn with Sumit – JavaScript Bangla Series",
-      link: "https://www.youtube.com/playlist?list=PLHiZ4m8vCp9MJg0W4-3nZ5pM2k23lOFaz",
+      link: "https://www.youtube.com/watch?v=rePN-VFo1Eo&list=PLHiZ4m8vCp9OkrURufHpGUUTBjJhO9Ghy",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKbtfLBn2bP4qjXbNpl1x_3z_lCWJzShmHS2zA=s176-c-k-c0x00ffffff-no-rj",
     },
-    {
-      title: "Code With Hridoy – JavaScript Bangla Tutorial",
-      link: "https://www.youtube.com/playlist?list=PL_XxuZqN0xVD1XoVX7dK3cWzD7YbD6oCx",
-      logo: "https://yt3.googleusercontent.com/ytc/APkrFKbI5UPEZIRQuPtGvS4lA7jqzAev8rEfxUzGynTz=s176-c-k-c0x00ffffff-no-rj",
-    },
+    
     {
       title: "Anisul Islam – JavaScript Full Bangla Tutorial",
-      link: "https://www.youtube.com/playlist?list=PLgH5QX0i9K3o8lgHAXNyte_Gi4zvP2r5S",
+      link: "https://www.youtube.com/watch?v=xpP5L1NuMQU&list=PLgH5QX0i9K3qzryglMjcyEktz4q7ySunX",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ3OfVaHHFGh6g1IthOcn1UBVuK2VvqYxMqlsKi=s176-c-k-c0x00ffffff-no-rj",
     },
     {
       title: "Stack Learner – JavaScript Bangla Course",
-      link: "https://www.youtube.com/playlist?list=PLoV4KCy9kbh8R0MyjY5bpDYhE3GEpHkzK",
+      link: "https://www.youtube.com/watch?v=9Rhawzp-Icg&list=PL_XxuZqN0xVAu_dWUVFbscqZdTzE8t6Z1",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ2vK0rWqZ5DPKtn3TxNUnzVuSvJD-2uG9TClhQ=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -268,7 +245,7 @@ const resources = {
     // --- English Resources After ---
     {
       title: "freeCodeCamp – JavaScript Full Course (English)",
-      link: "https://www.youtube.com/watch?v=jS4aFq5-91M",
+      link: "https://www.youtube.com/watch?v=PkZNo7MFNFg&list=PLWKjhJtqVAbleDe3_ZA8h3AO2rXar-q2V",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKaPB-BuQnEDf6oLK04EmCWLlzHK4O2QGkk9a7ZV5Q=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -287,15 +264,15 @@ const resources = {
       logo: "https://www.w3schools.com/favicon.ico",
     },
     {
-      title: "Traversy Media – JavaScript Crash Course (English)",
-      link: "https://www.youtube.com/watch?v=hdI2bqOjy3c",
+      title: "Code with Harry)",
+      link: "https://www.youtube.com/watch?v=ER9SspLe4Hg&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKY1pNU6n2EDEInBq0QbeABsJYrhOKuZ8dt4kRYN=s176-c-k-c0x00ffffff-no-rj",
     }
   ],  
   icpc: [
     {
       title: "Apna College – Codeforces Solutions Playlist",
-      link: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ",
+      link: "https://www.youtube.com/watch?v=VTLCoHnyACE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
       logo: "https://tse3.mm.bing.net/th?id=OIP.g6QD-mce5w03KqSX4omgfwAAAA&rs=1&pid=ImgDetMain",
     },
     {
@@ -332,7 +309,7 @@ const resources = {
     },
     {
       title: "Apna College – Interview Preparation Playlist",
-      link: "https://www.youtube.com/playlist?list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop",
+      link: "https://www.youtube.com/watch?v=VTLCoHnyACE&list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt",
       logo: "https://tse3.mm.bing.net/th?id=OIP.g6QD-mce5w03KqSX4omgfwAAAA&rs=1&pid=ImgDetMain",
     },
     {
@@ -351,16 +328,7 @@ const resources = {
       link: "https://www.geeksforgeeks.org/interview-preparation-for-software-developer/",
       logo: "https://media.geeksforgeeks.org/gfg-gg-logo.svg",
     },
-    {
-      title: "Coding Ninjas Interview Series",
-      link: "https://www.youtube.com/playlist?list=PL8yHsr3EFj53-wzCr8dGzCVYjzQg3qHNf",
-      logo: "https://files.codingninjas.in/cn-logo-dark-9824.png",
-    },
-    {
-      title: "CS Dojo – Coding Interview Playlist",
-      link: "https://www.youtube.com/playlist?list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H",
-      logo: "https://yt3.googleusercontent.com/ytc/AGIKgqPY0j7P_DXrKQ09pIrVpDdR-3-D6I0V6cT0HJnS=s900-c-k-c0x00ffffff-no-rj",
-    },
+    
     {
       title: "NeetCode – Best Coding Interview Questions",
       link: "https://neetcode.io/",
@@ -368,47 +336,42 @@ const resources = {
     },
     {
       title: "freeCodeCamp – Interview Prep Course",
-      link: "https://www.youtube.com/watch?v=8hly31xKli0",
+      link: "https://www.youtube.com/watch?v=-LVmKNvflnY",
       logo: "https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png",
     },
     {
       title: "MIT OpenCourseWare – Intro to Algorithms",
-      link: "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/",
+      link: "https://www.youtube.com/watch?v=ZA-tUyM_y7s&list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY",
       logo: "https://ocw.mit.edu/images/logo_ocw-default.png",
     },
   ],
   webdev: [
     // --- Bangla Resources First ---
     {
-      title: "Learn with Sumit – Web Development Full Course (Bangla)",
-      link: "https://www.youtube.com/playlist?list=PLHiZ4m8vCp9MFjMRp9EEHWKArbi0wdgXG",
-      logo: "https://yt3.googleusercontent.com/ytc/APkrFKbtfLBn2bP4qjXbNpl1x_3z_lCWJzShmHS2zA=s176-c-k-c0x00ffffff-no-rj",
-    },
-    {
       title: "Programming Hero – Complete Web Development Course (Bangla)",
       link: "https://web.programming-hero.com/",
       logo: "https://web.programming-hero.com/images/hero-logo.png",
     },
     {
-      title: "Code with Hridoy – Web Development Tutorials (Bangla)",
-      link: "https://www.youtube.com/playlist?list=PL_XxuZqN0xVAGWmipjxEwlEUPg_hPhvKf",
+      title: "Code with Harry – Web Development Tutorials",
+      link: "https://www.youtube.com/watch?v=6mbwJ2xhgzM&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKbI5UPEZIRQuPtGvS4lA7jqzAev8rEfxUzGynTz=s176-c-k-c0x00ffffff-no-rj",
     },
     {
       title: "Anisul Islam – Web Development Bangla Series",
-      link: "https://www.youtube.com/playlist?list=PLgH5QX0i9K3rNOJvRkGFkBJZCuPqCB5H6",
+      link: "https://www.youtube.com/watch?v=ADFDxhipgiI&list=PLgH5QX0i9K3p06YY1fyReA2UK8mh_zsiY",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ3OfVaHHFGh6g1IthOcn1UBVuK2VvqYxMqlsKi=s176-c-k-c0x00ffffff-no-rj",
     },
     {
       title: "Stack Learner – Professional Web Development Course (Bangla)",
-      link: "https://www.youtube.com/c/StackLearner",
+      link: "https://www.youtube.com/watch?v=1RzKcWEpb5Q&list=PL_XxuZqN0xVBPhR5bjBIKyBjTo8pK99gN",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKZ2vK0rWqZ5DPKtn3TxNUnzVuSvJD-2uG9TClhQ=s176-c-k-c0x00ffffff-no-rj",
     },
   
     // --- English Resources After ---
     {
       title: "freeCodeCamp – Responsive Web Design Certification",
-      link: "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+      link: "https://www.youtube.com/watch?v=kUMe1FH4CHE&list=PLNvOKbV26aTkQAybRk3vjxtVYg8RxIYS8",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKaPB-BuQnEDf6oLK04EmCWLlzHK4O2QGkk9a7ZV5Q=s176-c-k-c0x00ffffff-no-rj",
     },
     {
@@ -418,7 +381,7 @@ const resources = {
     },
     {
       title: "Traversy Media – Web Development Crash Course",
-      link: "https://www.youtube.com/watch?v=UB1O30fR-EE",
+      link: "https://www.youtube.com/watch?v=UB1O30fR-EE&list=PLillGF-RfqbYeckUaD1z6nviTp31GLTH8",
       logo: "https://yt3.googleusercontent.com/ytc/APkrFKY1pNU6n2EDEInBq0QbeABsJYrhOKuZ8dt4kRYN=s176-c-k-c0x00ffffff-no-rj",
     },
     {
