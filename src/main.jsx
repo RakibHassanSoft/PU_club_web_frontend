@@ -17,6 +17,8 @@ import Course from "./compoents/Course/Course.jsx";
 import DSA from "./compoents/Course/DSA/DSA.jsx";
 import OurMentors from "./pages/Our mentors/OurMentors.jsx";
 import STest from "./pages/STest/STest.jsx";
+import LTest from "./pages/LTest/LTest.jsx";
+import CTest from "./pages/CTest/CTest.jsx";
 
 
 const router = createBrowserRouter([
@@ -44,9 +46,13 @@ const router = createBrowserRouter([
         path:'/daily-problems',
         element:<DailyProblemPage/>,
       },
-      { 
-        path:'/s-test',
-        element:<STest/>,
+      {
+        path: '/',
+        children: [
+          { path: 'c-test', element: <CTest /> },
+          { path: 's-test', element: <STest /> },
+          { path: 'l-test', element: <LTest /> },
+        ]
       },
       { 
         path:'/resources',

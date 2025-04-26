@@ -21,7 +21,7 @@ const Main = () => {
       <Footer />
 
       {/* Chat Option Component (Defined inside Main.js) */}
-      <div className="fixed bottom-8 right-8 flex flex-col items-center space-y-3">
+      <div className="fixed bottom-1 right-1 lg:bottom-8 lg:right-8 flex flex-col items-center space-y-3">
         {/* Text Option */}
         <button
           onClick={handleToggleWhatsapp}

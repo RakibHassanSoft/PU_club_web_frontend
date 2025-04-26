@@ -27,10 +27,18 @@ const Signup = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r  px-4">
-      <div className="bg-white  w-full max-w-6xl rounded-lg  flex flex-col md:flex-row overflow-hidden shadow-xl">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r  lg:px-4 mb-10">
+      <div className="flex  mt-20 flex-col md:flex-row items-center bg-white rounded-lg  max-w-5xl w-full overflow-hidden  shadow-xl">
+         {/* Animation Section */}
+         <div className="w-full md:h-screen  lg:h-screen   md:w-1/2 flex items-center justify-center bg-gradient-to-r from-red-50 to-red-700 p-6">
+          <Lottie
+            animationData={signupAnimation}
+            loop={true}
+            className="w-full  max-w-md"
+          />
+        </div>
         {/* Form Section */}
-        <div className="w-full md:w-1/2 p-8">
+        <div className="w-full md:w-1/2 p-1 lg:p-8">
           <h2 className="text-3xl font-bold text-center text-red-600 mb-6">
             Sign Up - PU Programming Club
           </h2>
@@ -95,14 +103,7 @@ const Signup = () => {
           </p>
         </div>
 
-        {/* Animation Section */}
-        <div className="w-full md:w-1/2 flex items-center justify-center bg-gradient-to-r from-red-50 to-red-700 p-6">
-          <Lottie
-            animationData={signupAnimation}
-            loop={true}
-            className="w-full max-w-md"
-          />
-        </div>
+       
       </div>
     </section>
   );

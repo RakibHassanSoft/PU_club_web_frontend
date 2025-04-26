@@ -32,11 +32,11 @@ const Login = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r px-4 ">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r lg:px-4 ">
       <div className="flex flex-col md:flex-row items-center bg-white rounded-lg  max-w-5xl w-full overflow-hidden  shadow-xl">
         
         {/* Animation Section */}
-        <div className="w-full md:w-1/2 flex justify-center items-center p-6 bg-gradient-to-r from-red-50 to-red-700">
+        <div className="w-full md:w-1/2 flex justify-center items-center p-6 bg-gradient-to-l from-red-50 to-red-700">
           <Lottie options={lottieOptions} height={400} width={450} />
         </div>
 

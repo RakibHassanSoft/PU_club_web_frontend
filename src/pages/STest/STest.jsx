@@ -34,11 +34,13 @@ const STest = () => {
   const [score, setScore] = useState(null);
   const [submitting, setSubmitting] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState("02:00:00");
+  const [loading, setLoading] = useState(false);
 
-  const DURATION = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+  const DURATION = 2 * 60 * 60 * 1000; // 2 hours
 
   const fetchProblems = async () => {
     try {
+      setLoading(true);
       const res = await axios.get(
         "https://codeforces.com/api/problemset.problems"
       );
@@ -53,46 +55,41 @@ const STest = () => {
       setScore(null);
     } catch (err) {
       console.error(err);
+    } finally {
+      setLoading(false);
     }
   };
 
   const handleStart = async () => {
-
     if (!level || !handle) {
-        Swal.fire({
-          icon: 'warning',
-          title: 'Missing Information',
-          text: 'Please select a division and enter your Codeforces handle.',
-        });
-        return;
-      }
+      Swal.fire({
+        icon: "warning",
+        title: "Missing Information",
+        text: "Please select a division and enter your Codeforces handle.",
+      });
+      return;
+    }
 
     try {
-        // Verifying the Codeforces handle
-        const res = await axios.get(
-          `https://codeforces.com/api/user.info?handles=${handle}`
-        );
-      
-        if (res.data.status === "OK") {
-          // Valid handle, proceed to fetch problems
-          fetchProblems();
-        } else {
-          // Show SweetAlert error message
-          Swal.fire({
-            icon: 'warning',
-            title: 'Invalid Codeforces handle',
-            text: 'Please enter a valid one.',
-          });
-        }
-      } catch (err) {
-        // Show SweetAlert error message for catch block
+      const res = await axios.get(
+        `https://codeforces.com/api/user.info?handles=${handle}`
+      );
+      if (res.data.status === "OK") {
+        fetchProblems();
+      } else {
         Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Error checking Codeforces handle. Please try again.',
+          icon: "warning",
+          title: "Invalid Codeforces handle",
+          text: "Please enter a valid one.",
         });
-        // console.error(err);
       }
+    } catch (err) {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Error checking Codeforces handle. Please try again.",
+      });
+    }
   };
 
   const checkSubmission = async () => {
@@ -119,7 +116,6 @@ const STest = () => {
     }
   };
 
-  // Countdown timer effect
   useEffect(() => {
     let timerInterval;
     if (startTime) {
@@ -127,7 +123,6 @@ const STest = () => {
         const now = Date.now();
         const remaining = DURATION - (now - startTime);
         setTimeRemaining(formatTime(remaining));
-
         if (remaining <= 0) {
           clearInterval(timerInterval);
           checkSubmission();
@@ -140,11 +135,11 @@ const STest = () => {
   return (
     <div className="min-h-screen bg-white py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10  ">
+        <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-orange-500 mb-10">
             Codeforces Self Test
           </h1>
-         
+
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-10">
             <select
               value={level}
@@ -180,12 +175,17 @@ const STest = () => {
             </div>
           )}
 
-          {problems.length > 0 && (
+          {loading && (
+            <div className="flex justify-center items-center mt-10">
+              <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-orange-500 border-solid"></div>
+            </div>
+          )}
+
+          {problems.length > 0 && !loading && (
             <div className="mt-10">
               <h2 className="text-2xl md:text-3xl font-semibold text-center text-gray-800 mb-8">
                 Your Problems
               </h2>
-
               <div className="flex flex-col gap-6">
                 {problems.map((p, i) => (
                   <a
@@ -196,10 +196,13 @@ const STest = () => {
                     className="block p-5 rounded-xl shadow-md border border-red-100 hover:shadow-lg hover:border-red-300 transition duration-300 bg-white"
                   >
                     <div className="flex justify-between">
-                    <h3 className="text-lg font-semibold text-red-600 mb-1"> <span className="text-black  px-2 space-x-1">{i+1 + " "}</span>
-                      {p.name}
-                    </h3>
-                    <p className="text-lg ml-2 text-gray-600 font-bold">Rating: {p.rating}</p>
+                      <h3 className="text-lg font-semibold text-red-600 mb-1">
+                        <span className="text-black px-2">{i + 1 + " "}</span>
+                        {p.name}
+                      </h3>
+                      <p className="text-lg ml-2 text-gray-600 font-bold">
+                        Rating: {p.rating}
+                      </p>
                     </div>
                   </a>
                 ))}
@@ -217,16 +220,15 @@ const STest = () => {
             <div className="text-center mt-6 text-sm text-gray-500 animate-pulse">
               Checking submissions...
             </div>
-            
           )}
-           <h1 className="text-lg text-center mb-10 flex items-center justify-center border-2 w-8/12 mx-auto shadow-xl rounded-full p-4 border-red-200 mt-12 bg-red-600 text-white">
-            <FaExclamationTriangle className="mr-2 text-white  " />
-            Warning!! Do not go any other page of this website during the test. It will reset
-            your test.
+
+          <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-center mb-8 flex items-center justify-center border-2 w-11/12 sm:w-10/12 md:w-8/12 lg:w-7/12 mx-auto shadow-xl rounded-full px-4 py-3 sm:px-6 sm:py-4 border-red-300 mt-10 bg-red-600 text-white">
+            <FaExclamationTriangle className="mr-2 text-white text-xl sm:text-2xl" />
+            Warning!! Do not go to any other page of this website during the
+            test. It will reset your test.
           </h1>
         </div>
       </div>
-      
     </div>
   );
 };

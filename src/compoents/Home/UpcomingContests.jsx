@@ -44,11 +44,11 @@ const UpcomingContests = () => {
   return (
     <section className="py-14 px-4">
        <h1 className='text-center font-bold text-red-600 text-4xl'>Up comming contest </h1>
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      <div className="max-w-5xl mx-auto flex flex-wrap  justify-center items-center gap-6 mt-10">
         {contests.map((contest, i) => (
           <div
             key={i}
-            className="bg-white border border-red-200 rounded-lg shadow-md p-5 text-center hover:bg-red-100 transition"
+            className="bg-white border w-64  border-red-200 rounded-lg shadow-md p-5 text-center hover:bg-red-100 transition"
           >
             <h3 className="text-xl font-semibold">{contest.platform}</h3>
             <p className="text-gray-700 mt-2">{contest.date}</p>

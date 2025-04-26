@@ -24,7 +24,7 @@ const ProblemCard = ({ problem }) => {
       rel="noopener noreferrer"
       className="transform transition-transform hover:scale-105 duration-300"
     >
-      <div className="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 space-y-4 w-96 md:w-[30rem] lg:w-[30rem] h-72 border-2 border-gray-300 relative">
+      <div className="bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 space-y-4 w-80 md:w-[30rem] lg:w-[30rem] h-72 border-2 border-gray-300 relative">
         {/* Rating Highlight */}
         {rating !== "N/A" && (
           <div className="absolute right-2 bottom-0 bg-red-500 text-white px-4 py-4  text-md rounded-full font-bold shadow-lg">
@@ -93,6 +93,8 @@ const SkeletonLoader = () => {
 };
 
 const DailyProblemPage = () => {
+  const [visibleTags, setVisibleTags] = useState(5); // Show 5 tags initially
+
   const [level, setLevel] = useState("Beginner");
   const [problems, setProblems] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -184,20 +186,23 @@ const DailyProblemPage = () => {
       setPageInput(page);
     }
   };
+  const handleShowMore = () => {
+    setVisibleTags(visibleTags + 5); // Show 5 more tags when clicked
+  };
 
   return (
-    <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg w-10/12">
+    <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg lg:w-10/12">
       <h2 className="text-5xl font-bold text-center mt-10 mb-10 text-red-600">
-         Problems
+        Problems
       </h2>
-      <div className="flex items-center gap-3 mb-6 bg-white border-2 border-red-500 rounded-full px-4 py-3 shadow-sm hover:border-red-600 transition duration-300 w-fit">
+      <div className="flex  items-center gap-3 mb-6 bg-white border-2 border-red-500 rounded-full px-4 py-3 shadow-lg hover:border-red-600 transition duration-300 w-fit">
         <FaFilter className="text-red-500 text-xl" />
         <select
           onChange={(e) => setLevel(e.target.value)}
           value={level}
           className="bg-transparent outline-none  text-gray-800 text-lg cursor-pointer"
         >
-          <option  value="Beginner">Beginner (800–1000)</option>
+          <option value="Beginner">Beginner (800–1000)</option>
           <option value="Intermediate">Intermediate (1000–1400)</option>
           <option value="Advanced">Advanced (1400–1800)</option>
           <option value="Expert">Expert (1800+)</option>
@@ -216,19 +221,28 @@ const DailyProblemPage = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-2 mb-6">
-        {tags.map((tag) => (
+        {tags.slice(0, visibleTags).map((tag) => (
           <button
             key={tag}
             onClick={() => setSelectedTag(selectedTag === tag ? "" : tag)}
-            className={`px-3 py-2  text-md rounded-full border border-white shadow-xl transition-all font-semibold duration-300 ${
+            className={`px-3 py-2 text-sm lg:text-md rounded-full border border-white shadow-xl transition-all font-semibold duration-300 ${
               selectedTag === tag
                 ? "bg-red-500 text-white"
-                : "bg-white text-black "
+                : "bg-white text-black"
             }`}
           >
             {tag}
           </button>
         ))}
+
+        {visibleTags < tags.length && (
+          <button
+            onClick={handleShowMore}
+            className="px-3 py-2 text-md rounded-full bg-red-800 text-white border border-white shadow-xl font-semibold"
+          >
+            Show More
+          </button>
+        )}
       </div>
 
       <div className="flex flex-wrap gap-6 justify-center items-center">

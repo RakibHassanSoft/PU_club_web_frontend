@@ -10,11 +10,21 @@ export const navLinks = [
     //   ]
     // },
     { name: 'Problems', path: '/daily-problems' },
-    { name: 'STest', path: '/s-test' },
+    // { name: 'C Test', path: '/c-test' },
+    // { name: 'CF Test', path: '/s-test' },
+    // { name: 'DSA Test', path: '/l-test' },
+    {
+      name: 'Test',
+      dropdown: [
+      { name: 'Basic Test', path: '/c-test' },
+      { name: 'CF Test', path: '/s-test' },
+      { name: 'DSA Test', path: '/l-test' },
+      ]
+    },
     { name: 'Ranking', path: '/ranking' },
     { name: 'Resources ', path: '/resources' },
     { name: 'Roadmap', path: '/roadmap' },
-    { name: 'Our Mentors', path: '/mentors' },
+    // { name: 'Our Mentors', path: '/mentors' },
 
   ];
   export const navLinks2 = [

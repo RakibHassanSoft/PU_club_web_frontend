@@ -1,0 +1,1906 @@
+[
+  {
+    "problem_name": "Wate",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "pointer",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Wate",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "switch",
+      "math",
+      "pointer"
+    ]
+  },
+  {
+    "problem_name": "Petya and St",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "nested loop",
+      "condition",
+      "input/output",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Next ",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and St",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "array",
+      "pointer",
+      "recursion",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Next Rou",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "loop",
+      "sorting",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Next Rou",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Next Rou",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "implementation",
+      "switch",
+      "sorting",
+      "array",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Watermelo",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "nested loop",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "recursion",
+      "strings",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "loop",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "pattern printing",
+      "loop",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "nested loop",
+      "sorting",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit+",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "loop",
+      "condition",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "pattern printing",
+      "math",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "array",
+      "greedy",
+      "math"
+    ]
+  },
+  {
+    "problem_name": "Bit+",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "loop",
+      "recursion",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Math",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "array",
+      "sorting",
+      "pointer",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "nested loop",
+      "pattern printing",
+      "greedy",
+      "math"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "string",
+      "recursion",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "math",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Helpful Math",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "function",
+      "pointer",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "array",
+      "loop",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Math",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "recursion",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Bit+",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "pointer",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Helpful Math",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "pattern printing",
+      "sorting",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Watermelo",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "pattern printing",
+      "math",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pattern printing",
+      "recursion",
+      "strings",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "sorting",
+      "math",
+      "condition"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "nested loop",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Watermelo",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "math",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "math",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "pattern printing",
+      "implementation",
+      "strings",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "condition",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit+",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "nested loop",
+      "pointer",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "math",
+      "function",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "nested loop",
+      "loop",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "nested loop",
+      "pattern printing",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "function",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "math",
+      "function",
+      "pointer"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "pattern printing",
+      "implementation",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Helpful Math",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "array",
+      "strings",
+      "function",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "pointer",
+      "math",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Helpful Math",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "input/output",
+      "strings",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "function",
+      "math",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "implementation",
+      "math",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "loop",
+      "input/output",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "implementation",
+      "strings",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "pointer",
+      "implementation",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "implementation",
+      "array",
+      "strings",
+      "input/output",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "pattern printing",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "nested loop",
+      "function",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "condition",
+      "implementation",
+      "function",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "condition",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "pointer",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Watermelo",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "nested loop",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "recursion",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "math",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "math",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Watermelo",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "condition",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "nested loop",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "nested loop",
+      "loop",
+      "greedy",
+      "math"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "implementation",
+      "sorting",
+      "math",
+      "pointer",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Bit+",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "nested loop",
+      "function",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Bit+",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "array",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "string",
+      "math",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Watermelo",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "pattern printing",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "array",
+      "math",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "nested loop",
+      "pattern printing",
+      "greedy",
+      "math",
+      "function"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "math",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Helpful Math",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "recursion",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "string",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "math",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Watermelo",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "math",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "implementation",
+      "sorting",
+      "string",
+      "math",
+      "function"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matri",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "pattern printing",
+      "math",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "math",
+      "recursion",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "loop",
+      "function",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Tabl",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "nested loop",
+      "pointer",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit+",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "nested loop",
+      "math",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Domino Pilin",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "loop",
+      "greedy",
+      "math",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Word",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "pattern printing",
+      "implementation",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "implementation",
+      "switch",
+      "sorting",
+      "array",
+      "loop"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pattern printing",
+      "math",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "loop",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "function",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and String",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "array",
+      "condition",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "recursion",
+      "input/output",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Next Roun",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "function",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Tea",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "condition",
+      "recursion",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pattern printing",
+      "loop",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "recursion",
+      "strings",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "string",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matrix",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "condition",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "condition",
+      "recursion",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Words",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "implementation",
+      "array",
+      "pointer",
+      "strings",
+      "function"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "nested loop",
+      "sorting",
+      "strings",
+      "function",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "pattern printing",
+      "function",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pattern printing",
+      "loop",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "pointer",
+      "recursion",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "array",
+      "recursion",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "pattern printing",
+      "greedy",
+      "math"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "sorting",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "nested loop",
+      "pattern printing",
+      "pointer",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "pattern printing",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Words",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "implementation",
+      "condition",
+      "function",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "pattern printing",
+      "sorting",
+      "recursion",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "sorting",
+      "array",
+      "math"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pointer",
+      "function",
+      "input/output",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "condition",
+      "greedy",
+      "math",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "nested loop",
+      "greedy",
+      "string",
+      "loop",
+      "math"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matrix",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "condition",
+      "pattern printing",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "switch",
+      "greedy",
+      "loop",
+      "math",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "loop",
+      "function",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pattern printing",
+      "function",
+      "strings",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "math",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "nested loop",
+      "greedy",
+      "math",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "math",
+      "recursion",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "nested loop",
+      "sorting",
+      "input/output",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matrix",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "pattern printing",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "nested loop",
+      "loop",
+      "sorting",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "switch",
+      "greedy",
+      "array",
+      "math",
+      "function"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Words",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "pattern printing",
+      "implementation",
+      "strings",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "function",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "loop",
+      "sorting",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matrix",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "implementation",
+      "array",
+      "loop",
+      "math",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "pointer",
+      "function",
+      "input/output",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pattern printing",
+      "function",
+      "condition",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "pattern printing",
+      "function",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "array",
+      "sorting",
+      "pattern printing",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "implementation",
+      "math",
+      "function",
+      "condition",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "pattern printing",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "implementation",
+      "string",
+      "array",
+      "math",
+      "pointer"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "sorting",
+      "pointer",
+      "function"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "math",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "pattern printing",
+      "sorting",
+      "input/output",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matrix",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "array",
+      "math",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "loop",
+      "math",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "nested loop",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "pattern printing",
+      "sorting",
+      "strings",
+      "function",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "math",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pointer",
+      "strings",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "pointer",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "condition",
+      "math",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Words",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "array",
+      "implementation",
+      "condition",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "pattern printing",
+      "sorting",
+      "strings",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "array",
+      "sorting",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "math",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Next Round",
+    "link": "https://codeforces.com/problemset/problem/158/A",
+    "tags": [
+      "pattern printing",
+      "sorting",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "strings",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "function",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "condition",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "nested loop",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "condition",
+      "pointer",
+      "recursion",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "nested loop",
+      "pointer",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "array",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "pattern printing",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "condition",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "loop",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "pattern printing",
+      "implementation",
+      "array"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "condition",
+      "recursion",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matrix",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "implementation",
+      "pattern printing",
+      "loop",
+      "math",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "math",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "array",
+      "function",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Domino Piling",
+    "link": "https://codeforces.com/problemset/problem/50/A",
+    "tags": [
+      "greedy",
+      "array",
+      "math",
+      "function",
+      "condition"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Words",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "loop",
+      "implementation",
+      "function",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "nested loop",
+      "sorting",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Watermelon",
+    "link": "https://codeforces.com/problemset/problem/4/A",
+    "tags": [
+      "loop",
+      "math",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "function",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "loop",
+      "function",
+      "math",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "nested loop",
+      "pattern printing",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "pattern printing",
+      "pointer",
+      "implementation",
+      "array"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "pointer",
+      "condition",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "sorting",
+      "string",
+      "loop",
+      "strings",
+      "recursion"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "function",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "pattern printing",
+      "loop",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Bit++",
+    "link": "https://codeforces.com/problemset/problem/282/A",
+    "tags": [
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "math",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "nested loop",
+      "switch",
+      "sorting",
+      "strings",
+      "input/output"
+    ]
+  },
+  {
+    "problem_name": "Petya and Strings",
+    "link": "https://codeforces.com/problemset/problem/112/A",
+    "tags": [
+      "pattern printing",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Stones on the Table",
+    "link": "https://codeforces.com/problemset/problem/266/A",
+    "tags": [
+      "function",
+      "condition",
+      "implementation"
+    ]
+  },
+  {
+    "problem_name": "Way Too Long Words",
+    "link": "https://codeforces.com/problemset/problem/71/A",
+    "tags": [
+      "loop",
+      "implementation",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "nested loop",
+      "condition",
+      "implementation",
+      "string"
+    ]
+  },
+  {
+    "problem_name": "Helpful Maths",
+    "link": "https://codeforces.com/problemset/problem/339/A",
+    "tags": [
+      "nested loop",
+      "loop",
+      "sorting",
+      "strings"
+    ]
+  },
+  {
+    "problem_name": "Team",
+    "link": "https://codeforces.com/problemset/problem/231/A",
+    "tags": [
+      "pointer",
+      "implementation",
+      "switch"
+    ]
+  },
+  {
+    "problem_name": "Beautiful Matrix",
+    "link": "https://codeforces.com/problemset/problem/263/A",
+    "tags": [
+      "implementation",
+      "switch",
+      "string",
+      "math",
+      "input/output"
+    ]
+  }
+]

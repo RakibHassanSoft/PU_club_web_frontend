@@ -56,7 +56,7 @@ const Navbar = () => {
 
               {/* Dropdown */}
               {link.dropdown && dropdown === link.name && (
-                <div className="absolute left-0  top-full mt-2 bg-red-600 shadow-lg rounded-md w-40 z-10 hover:text-white">
+                <div className="absolute left-0  top-full mt-1 bg-red-600 shadow-lg rounded-md w-40 z-10 hover:text-white">
                   {link.dropdown.map((item, idx) => (
                     <div
                       key={idx}
@@ -66,7 +66,7 @@ const Navbar = () => {
                       {/* Gradient background */}
                       <span className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-red-300 to-transparent opacity-0 group-hover:opacity-50 transition-all duration-700 ease-in-out pointer-events-none"></span>
                       {/* Dropdown Item */}
-                      <div className="px-4 py-2 hover:bg-white hover:text-red-600 text-sm cursor-pointer relative z-10">
+                      <div className="px-4 py-2 hover:bg-white hover:text-red-600 text-lg cursor-pointer relative z-10">
                         {item.name}
                       </div>
                     </div>
@@ -185,19 +185,19 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
+            {isOpen ? <FaTimes className="text-red-600" size={22} /> : <FaBars className="text-red-600" size={22} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4">
-          <ul className="flex flex-col gap-3">
+        <div className="md:hidden px-6 pb-6">
+          <ul className="flex flex-col gap-4">
             {navLinks.map((link, i) => (
               <div key={i}>
                 <li
-                  className="font-medium text-sm relative px-2 py-1 overflow-hidden cursor-pointer border-l-4 border-transparent hover:border-red-500  transition-all duration-300 group"
+                  className="font-semibold text-base relative px-3 py-2 rounded-xl cursor-pointer  transition-all duration-300 group border-2 bg-red-800  text-white  border-violet-900 "
                   onClick={() => {
                     if (link.path) {
                       navigate(link.path);
@@ -208,42 +208,55 @@ const Navbar = () => {
                   <span className="relative z-10 group-hover:text-red-500 transition-colors duration-300">
                     {link.name}
                   </span>
-                  {/* Add shimmer effect on hover */}
-                  <span className="absolute left-0 top-0 w-full h-full bg-gradient-to-r from-transparent via-red-100 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer" />
+                  <span className="absolute inset-0 bg-gradient-to-r from-transparent via-red-100 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer" />
                 </li>
 
                 {/* Dropdown Items */}
-                {link.dropdown &&
-                  link.dropdown.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="pl-4 text-sm text-red-500 cursor-pointer hover:underline  hover:text-red-600 relative group"
-                      onClick={() => {
-                        navigate(item.path);
-                        setIsOpen(false);
-                      }}
-                    >
-                      <span className="relative z-10  transition-colors duration-300">
-                        • {item.name}
-                      </span>
-                      <span className="absolute left-0 top-0 w-full h-full bg-gradient-to-r from-transparent via-red-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer" />
-                    </li>
-                  ))}
+                {link.dropdown && (
+                  <ul className="ml-4 mt-2 flex flex-col gap-2">
+                    {link.dropdown.map((item, idx) => (
+                      <li
+                        key={idx}
+                        className="text-lg p-2 rounded-xl bg-red-800  text-white border-violet-900  cursor-pointer hover:underline relative group"
+                        onClick={() => {
+                          navigate(item.path);
+                          setIsOpen(false);
+                        }}
+                      >
+                        <span className="relative z-10 transition-colors duration-300 ml-5">
+                           {item.name}
+                        </span>
+                        <span className="absolute inset-0 bg-gradient-to-r from-transparent via-red-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer" />
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             ))}
 
-            {/* Profile Button */}
-            <li>
-              {user ? (
-                <Link to="profile">
-                  <button className="mt-3 bg-blue-600 text-white px-4 py-2 rounded-md w-full hover:bg-blue-700 transition">
-                    Profile
-                  </button>
-                </Link>
-              ) : (
-                <Link to="profile">
-                  <button className="mt-3 bg-blue-600 text-white px-4 py-2 rounded-md w-full hover:bg-blue-700 transition">
-                    Profile
+             
+            {/* Profile and Signup Buttons */}
+            <li className="mt-4 flex flex-col gap-3">
+              {/* Profile or Login Button */}
+              <Link 
+               onClick={() => {
+                setIsOpen(false);
+              }}
+              to={user ? "/profile" : "/signin"}>
+                <button className="w-full bg-red-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-all duration-300">
+                  {user ? "Profile" : "Login"}
+                </button>
+              </Link>
+
+              {/* Signup Button - only show if user is not logged in */}
+              {!user && (
+                <Link
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+                 to="/signup">
+                  <button className="w-full  bg-red-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-all duration-300">
+                    Signup
                   </button>
                 </Link>
               )}
