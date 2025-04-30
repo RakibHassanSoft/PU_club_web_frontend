@@ -4,13 +4,31 @@ import { Link, useNavigate } from "react-router-dom";
 import { navLinks, navLinks2 } from "./navLinks";
 import { FaBars, FaTimes } from "react-icons/fa";
 import puLogo from "../../../public/image/pucp.png";
+import useAuth from "../../hook/useAuth";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdown, setDropdown] = useState(null);
   const [profileDropdown, setProfileDropdown] = useState(false);
   const navigate = useNavigate();
-  const user = false;
+
+  const user = useAuth();
+  // console.log(user)
+  const handleLogout = () => {
+    sessionStorage.removeItem("userEmail");
+    // Optional: show a SweetAlert
+    Swal.fire(
+      "Logged Out",
+      "You have been logged out successfully.",
+      "success"
+    );
+    // Redirect to login page after a short delay (to allow alert to show)
+    setTimeout(() => {
+      navigate("/signin");
+    }, 1000);
+  };
+
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -122,7 +140,10 @@ const Navbar = () => {
                       {/* My Learnings Button inside the dropdown */}
                       <span
                         className="relative z-10 px-6 py-2 text-black hover:text-white font-semibold rounded-md transition duration-300 ease-in-out "
-                        onClick={() => navigate("/")}
+                        onClick={() => {
+                          handleLogout(); // Clear session
+                          navigate("/"); // Redirect to homepage
+                        }}
                       >
                         Logout
                       </span>
@@ -185,7 +206,11 @@ const Navbar = () => {
         {/* Mobile Menu Toggle */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <FaTimes className="text-red-600" size={22} /> : <FaBars className="text-red-600" size={22} />}
+            {isOpen ? (
+              <FaTimes className="text-red-600" size={22} />
+            ) : (
+              <FaBars className="text-red-600" size={22} />
+            )}
           </button>
         </div>
       </div>
@@ -224,7 +249,7 @@ const Navbar = () => {
                         }}
                       >
                         <span className="relative z-10 transition-colors duration-300 ml-5">
-                           {item.name}
+                          {item.name}
                         </span>
                         <span className="absolute inset-0 bg-gradient-to-r from-transparent via-red-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-shimmer" />
                       </li>
@@ -234,15 +259,15 @@ const Navbar = () => {
               </div>
             ))}
 
-             
             {/* Profile and Signup Buttons */}
             <li className="mt-4 flex flex-col gap-3">
               {/* Profile or Login Button */}
-              <Link 
-               onClick={() => {
-                setIsOpen(false);
-              }}
-              to={user ? "/profile" : "/signin"}>
+              <Link
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+                to={user ? "/profile" : "/signin"}
+              >
                 <button className="w-full bg-red-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-all duration-300">
                   {user ? "Profile" : "Login"}
                 </button>
@@ -251,10 +276,11 @@ const Navbar = () => {
               {/* Signup Button - only show if user is not logged in */}
               {!user && (
                 <Link
-                onClick={() => {
-                  setIsOpen(false);
-                }}
-                 to="/signup">
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                  to="/signup"
+                >
                   <button className="w-full  bg-red-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-all duration-300">
                     Signup
                   </button>

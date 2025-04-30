@@ -11,7 +11,7 @@ const UpcomingContests = () => {
         const codeforcesRes = await fetch('https://codeforces.com/api/contest.list?gym=false');
         const codeforcesData = await codeforcesRes.json();
 
-        console.log('Codeforces API Response:', codeforcesData); // Log Codeforces data
+        // console.log('Codeforces API Response:', codeforcesData); // Log Codeforces data
 
         // Get the current date and the date 7 days from now
         const currentDate = new Date();

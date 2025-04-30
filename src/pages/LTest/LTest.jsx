@@ -12,10 +12,7 @@ const getRandomProblems = (problems, count = 5) => {
 const formatTime = (milliseconds) => {
   const totalSeconds = Math.max(0, Math.floor(milliseconds / 1000));
   const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
-  const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(
-    2,
-    "0"
-  );
+  const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
   const seconds = String(totalSeconds % 60).padStart(2, "0");
   return `${hours}:${minutes}:${seconds}`;
 };
@@ -27,6 +24,7 @@ const LTest = () => {
   const [startTime, setStartTime] = useState(null);
   const [timeRemaining, setTimeRemaining] = useState("02:00:00");
   const [allTags, setAllTags] = useState([]);
+  const [remainingProblems, setRemainingProblems] = useState([]);
 
   const DURATION = 2 * 60 * 60 * 1000;
 
@@ -35,7 +33,6 @@ const LTest = () => {
     fetch("job-problems.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Fetched data:", data);
         const tagsSet = new Set();
         data.forEach((p) => {
           if (p.tag) {
@@ -43,52 +40,45 @@ const LTest = () => {
           }
         });
         const tagArray = [...tagsSet].sort();
-        console.log("Available tags:", tagArray);
         setAllTags(tagArray);
+        setRemainingProblems(data);
       })
       .catch((err) => console.error("Error loading problems:", err));
   }, []);
 
-  // Fetch filtered problems
+  // Fetch filtered problems based on level and tag
   const fetchProblems = async () => {
-    try {
-      const res = await fetch("job-problems.json");
-      const data = await res.json();
+    if (!level) return;
 
-      let filtered = [];
+    let filtered = [];
 
-      if (level === "Combined") {
-        // Fetch 2 Easy, 2 Medium, 1 Hard
-        const easyProblems = data.filter(
-          (p) => p.level.toLowerCase() === "easy"
-        );
-        const mediumProblems = data.filter(
-          (p) => p.level.toLowerCase() === "medium"
-        );
-        const hardProblems = data.filter(
-          (p) => p.level.toLowerCase() === "hard"
-        );
+    if (level === "Combined") {
+      // Fetch 2 Easy, 2 Medium, 1 Hard
+      const easyProblems = remainingProblems.filter(
+        (p) => p.level.toLowerCase() === "easy"
+      );
+      const mediumProblems = remainingProblems.filter(
+        (p) => p.level.toLowerCase() === "medium"
+      );
+      const hardProblems = remainingProblems.filter(
+        (p) => p.level.toLowerCase() === "hard"
+      );
 
-        // Combine them dynamically
-        filtered = [
-          ...getRandomProblems(easyProblems, 2),
-          ...getRandomProblems(mediumProblems, 2),
-          ...getRandomProblems(hardProblems, 1),
-        ];
-      } else {
-        // Fetch for the selected level
-        filtered = data.filter(
-          (p) =>
-            p.level.toLowerCase() === level.toLowerCase() &&
-            (!tag || p.tag.toLowerCase().includes(tag.toLowerCase()))
-        );
-      }
-
-      setProblems(getRandomProblems(filtered));
-      setStartTime(Date.now());
-    } catch (err) {
-      console.error("Error fetching problems:", err);
+      filtered = [
+        ...getRandomProblems(easyProblems, 2),
+        ...getRandomProblems(mediumProblems, 2),
+        ...getRandomProblems(hardProblems, 1),
+      ];
+    } else {
+      filtered = remainingProblems.filter(
+        (p) =>
+          p.level.toLowerCase() === level.toLowerCase() &&
+          (!tag || p.tag.toLowerCase().includes(tag.toLowerCase()))
+      );
     }
+
+    setProblems(getRandomProblems(filtered));
+    setStartTime(Date.now());
   };
 
   const handleStart = () => {
@@ -110,7 +100,14 @@ const LTest = () => {
         const now = Date.now();
         const remaining = DURATION - (now - startTime);
         setTimeRemaining(formatTime(remaining));
-        if (remaining <= 0) clearInterval(timerInterval);
+        if (remaining <= 0) {
+          clearInterval(timerInterval);
+          Swal.fire({
+            icon: "info",
+            title: "Test Completed",
+            text: "Your test has ended.",
+          });
+        }
       }, 1000);
     }
     return () => clearInterval(timerInterval);
@@ -136,7 +133,7 @@ const LTest = () => {
               <option value="Easy">Easy</option>
               <option value="Medium">Medium</option>
               <option value="Hard">Hard</option>
-              <option value="Combined">Combined </option>
+              <option value="Combined">Combined</option>
             </select>
 
             {/* Tag Dropdown */}
@@ -196,20 +193,18 @@ const LTest = () => {
                         </span>
                         {p.name}
                       </h3>
-                      {/* <p className="text-sm font-medium text-gray-600">
-                        Tag: {p.tag}
-                      </p> */}
                     </div>
                   </a>
                 ))}
               </div>
             </div>
           )}
-          {problems == 0 && tag !== "" && level !== "" && (
+          {problems.length === 0 && tag !== "" && level !== "" && (
             <div className="text-center text-xl font-semibold text-red-500">
               No problems available for the selected difficulty.
             </div>
           )}
+
           <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl text-center mb-8 flex items-center justify-center border-2 w-11/12 sm:w-10/12 md:w-8/12 lg:w-7/12 mx-auto shadow-xl rounded-full px-4 py-3 sm:px-6 sm:py-4 border-red-300 mt-10 bg-red-600 text-white">
             <FaExclamationTriangle className="mr-2 text-white text-xl sm:text-2xl" />
             Warning!! Do not go to any other page of this website during the

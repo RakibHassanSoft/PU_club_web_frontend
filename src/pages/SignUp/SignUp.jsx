@@ -1,9 +1,11 @@
 import { useState } from "react";
 import Lottie from "lottie-react";
 import signupAnimation from "../../../public/lottie-animation1.json"; // Make sure this path is correct
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import useAxiosData from "../../hook/useAxiosData";
 const Signup = () => {
+  const navigation = useNavigate();
   const [formData, setFormData] = useState({
     fullName: "",
     puId: "",
@@ -20,17 +22,93 @@ const Signup = () => {
       [name]: value,
     }));
   };
+  const { data, loading, error, mutate } = useAxiosData({
+    secure: false, // Public API
+    method: "POST",
+    endpoint: "/auth/register",
+  });
+  //  console.log(data);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Submitted Data:", formData);
+
+    let { fullName, puId, codeforcesHandle, email, password, confirmPassword } =
+      formData;
+
+    fullName = fullName.trim();
+    puId = puId.trim();
+    codeforcesHandle = codeforcesHandle.trim();
+    email = email.trim();
+
+    // Check 1: puId has 9 digits
+    if (!/^\d{9}$/.test(puId)) {
+      return Swal.fire("Error", "PU ID must be exactly 9 digits.", "error");
+    }
+
+    // Check 2: Codeforces handle is real
+    try {
+      const response = await fetch(
+        `https://codeforces.com/api/user.info?handles=${codeforcesHandle}`
+      );
+      const result = await response.json();
+
+      if (result.status !== "OK") {
+        return Swal.fire("Error", "Invalid Codeforces handle.", "error");
+      }
+    } catch (error) {
+      return Swal.fire("Error", "Failed to verify Codeforces handle.", "error");
+    }
+
+    // Check 3: Email format
+    const expectedEmail = `${puId}@student.presidency.edu.bd`;
+    if (email !== expectedEmail) {
+      return Swal.fire("Error", `Email must be: ${expectedEmail}`, "error");
+    }
+
+    // Check 4: Password structure
+    const passwordRegex =
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    if (!passwordRegex.test(password)) {
+      return Swal.fire(
+        "Error",
+        "Password must be at least 8 characters long and include uppercase, lowercase, number, and special character.",
+        "error"
+      );
+    }
+
+    // Check 5: Password match
+    if (password !== confirmPassword) {
+      return Swal.fire("Error", "Passwords do not match.", "error");
+    }
+
+    // All checks passed
+    console.log("Submitted Data:", {
+      fullName,
+      puId,
+      codeforcesHandle,
+      email,
+      password,
+    });
+    if (loading) {
+      return Swal.fire("Error", "Loading...", "error");
+    }
+
+    await mutate({ fullName, puId, codeforcesHandle, email, password }); 
+    if(data) {
+      Swal.fire("Success", "Account created successfully!", "success");
+      navigation("/")
+    }
+    if (error) {
+      Swal.fire("Error", "Failed to create account.", "error");
+    }
+
   };
 
   return (
     <section className=" flex items-center justify-center bg-gradient-to-r  lg:px-4 mb-10">
-      <div className="flex  mt-20 flex-col md:flex-row items-center bg-gradient-to-r from-red-500 to-red-800 rounded-lg  max-w-5xl w-full overflow-hidden  shadow-xl">
-         {/* Animation Section */}
-         <div className="w-full    md:w-1/2 flex items-center justify-center p-6">
+      <div className="flex  mt-20 flex-col md:flex-row items-center bg-gradient-to-r from-red-500 to-red-800  rounded-lg  max-w-5xl w-full overflow-hidden  shadow-xl">
+        {/* Animation Section */}
+        <div className="w-full  md:w-1/2 flex items-center justify-center p-6">
           <Lottie
             animationData={signupAnimation}
             loop={true}
@@ -39,21 +117,24 @@ const Signup = () => {
         </div>
         {/* Form Section */}
         <div className="w-full md:w-1/2 p-1 lg:p-4 bg-white">
-          <h2 className="text-3xl font-bold text-center text-red-600 mb-6">
-            Sign Up - PU Programming Club
+          <h2 className="text-3xl font-bold text-center text-red-800 mb-2">
+            PU Programming Club
+          </h2>
+          <h2 className="text-3xl font-bold text-center text-red-800 mb-6">
+            Sign Up
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-5 m-10 ">
             <InputField
               label="Full Name"
               name="fullName"
-              placeholder="John Doe"
+              placeholder="md rakibul islam"
               onChange={handleChange}
             />
             <InputField
               label="PU Student ID"
               name="puId"
-              placeholder="PU123456"
+              placeholder="123456789"
               onChange={handleChange}
             />
             <InputField
@@ -66,7 +147,7 @@ const Signup = () => {
               label="Email"
               name="email"
               type="email"
-              placeholder="john@example.com"
+              placeholder="123456789@student.presidency.edu.bd"
               onChange={handleChange}
             />
             <InputField
@@ -102,8 +183,6 @@ const Signup = () => {
             </Link>
           </p>
         </div>
-
-       
       </div>
     </section>
   );
