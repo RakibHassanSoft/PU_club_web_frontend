@@ -7,12 +7,14 @@ import Demo from "../../compoents/Shared/Demo";
 import useAuth from "../../hook/useAuth";
 
 const Home = () => {
-  const isAuthenticated = useAuth();
-  
-  if (!isAuthenticated) {
-    // If not authenticated, the user will be redirected, and the content won't load
-    return null; // Or display a loading indicator
-  }
+  //for secure route
+  // const isAuthenticated = useAuth();
+
+  // if (!isAuthenticated) {
+  //   // If not authenticated, the user will be redirected, and the content won't load
+  //   return null; // Or display a loading indicator
+  // }
+
   return (
     <div className="space-y-12">
       <Hero />

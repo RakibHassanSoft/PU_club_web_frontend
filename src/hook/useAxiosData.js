@@ -44,10 +44,10 @@ const useAxiosData = ({ secure = false, method = 'GET', endpoint, params = {}, b
   const mutationResult = useMutation({
     mutationFn: (bodyData) => makeRequest(axiosInstance, method, endpoint, params, bodyData),
     onError: (err) => {
-      console.error('Error during mutation:', err);
+      // console.error('Error during mutation:', err);
     },
     onSuccess: (data) => {
-      console.log('Mutation successful', data);
+      // console.log('Mutation successful');
     },
   });
 

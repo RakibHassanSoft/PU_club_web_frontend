@@ -1,0 +1,8 @@
+/* calendar.css */
+.marked-day {
+    background-color: #991b1b !important; /* Tailwind red-800 */
+    color: white !important;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  

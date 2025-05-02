@@ -6,6 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import puLogo from "../../../public/image/pucp.png";
 import useAuth from "../../hook/useAuth";
 import Swal from "sweetalert2";
+import useUser from "../../hook/useUser";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,17 +14,23 @@ const Navbar = () => {
   const [profileDropdown, setProfileDropdown] = useState(false);
   const navigate = useNavigate();
 
+  const { isAdmin, loading, error ,refetch } = useUser();
+  // console.log(isAdmin)
+
   const user = useAuth();
-  // console.log(user)
-  const handleLogout = () => {
+  
+
+  const sessionEmail = sessionStorage.getItem("userEmail");
+  const isLoggedIn = sessionEmail !== null && sessionEmail !== undefined;
+
+  const handleLogout = async () => {
     sessionStorage.removeItem("userEmail");
-    // Optional: show a SweetAlert
+    // Optional: reset admin state immediately
     Swal.fire(
       "Logged Out",
       "You have been logged out successfully.",
       "success"
     );
-    // Redirect to login page after a short delay (to allow alert to show)
     setTimeout(() => {
       navigate("/signin");
     }, 1000);
@@ -96,12 +103,12 @@ const Navbar = () => {
         </ul>
 
         {/* Right side buttons */}
-        {user ? (
+        {isLoggedIn !== false ? (
           <div className="hidden md:flex items-center gap-4 relative">
             {/* Profile Image */}
             <div className="relative">
               <img
-                src="https://i.pravatar.cc/40"
+                src="https://www.pngarts.com/files/11/Avatar-Transparent-Images.png"
                 alt="profile"
                 className="h-10 w-10 rounded-full border cursor-pointer"
                 onClick={() => setProfileDropdown(!profileDropdown)}
@@ -122,15 +129,62 @@ const Navbar = () => {
                       {/* My Learnings Button inside the dropdown */}
                       <span
                         className="relative z-10 px-6 py-2 text-black hover:text-white font-semibold rounded-md transition duration-300 ease-in-out "
-                        onClick={() => navigate("/my-learnings")}
+                        onClick={() => {
+                          setProfileDropdown(!profileDropdown); // Toggle dropdown state
+                          navigate("/my-learnings"); // Navigate to "/my-learnings"
+                        }}
                       >
                         My Learnings
                       </span>
                     </div>
                   </li>
+                  {isAdmin && (
+                    <li
+                      key={2}
+                      className="relative group cursor-pointer text-md font-medium border-2 border-transparent rounded-md transition duration-300 ease-in-out hover:border-red-600 active:scale-95 hover:text-white hover:bg-red-600 text-black"
+                    >
+                      {/* Shine effect inside label span */}
+                      <div className="relative overflow-hidden">
+                        <span className="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-red-300 to-transparent opacity-50 group-hover:left-full transition-all duration-700 ease-in-out pointer-events-none"></span>
+
+                        {/* My Learnings Button inside the dropdown */}
+                        <span
+                          className="relative z-10 px-6 py-2 text-black hover:text-white font-semibold rounded-md transition duration-300 ease-in-out "
+                          onClick={() => {
+                            setProfileDropdown(!profileDropdown);
+                            navigate("/handle-users"); // Redirect to homepage
+                          }}
+                        >
+                          Handle Users
+                        </span>
+                      </div>
+                    </li>
+                  )}
+                  {loading && (
+                    <li
+                      key={4}
+                      className="relative group cursor-pointer text-md font-medium border-2 border-transparent rounded-md transition duration-300 ease-in-out hover:border-red-600 active:scale-95 hover:text-white hover:bg-red-600 text-black"
+                    >
+                      {/* Shine effect inside label span */}
+                      <div className="relative overflow-hidden">
+                        <span className="absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-red-300 to-transparent opacity-50 group-hover:left-full transition-all duration-700 ease-in-out pointer-events-none"></span>
+
+                        {/* My Learnings Button inside the dropdown */}
+                        <span
+                          className="relative z-10 px-6 py-2 text-black hover:text-white font-semibold rounded-md transition duration-300 ease-in-out "
+                          onClick={() => {
+                            setProfileDropdown(!profileDropdown);
+                            navigate("/handle-users"); // Redirect to homepage
+                          }}
+                        >
+                          loading....
+                        </span>
+                      </div>
+                    </li>
+                  )}
                   {/* Dropdown Option: My Learnings */}
                   <li
-                    key={1}
+                    key={6}
                     className="relative group cursor-pointer text-md font-medium border-2 border-transparent rounded-md transition duration-300 ease-in-out hover:border-red-600 active:scale-95 hover:text-white hover:bg-red-600 text-black"
                   >
                     {/* Shine effect inside label span */}
@@ -258,6 +312,18 @@ const Navbar = () => {
                 )}
               </div>
             ))}
+            {isAdmin && (
+              <Link
+                onClick={() => {
+                  setIsOpen(false);
+                }}
+                to="/handle-users"
+              >
+                <button className="w-full  bg-red-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-all duration-300">
+                  handle users
+                </button>
+              </Link>
+            )}
 
             {/* Profile and Signup Buttons */}
             <li className="mt-4 flex flex-col gap-3">
@@ -266,7 +332,7 @@ const Navbar = () => {
                 onClick={() => {
                   setIsOpen(false);
                 }}
-                to={user ? "/profile" : "/signin"}
+                to={user ? "/my-learnings" : "/signin"}
               >
                 <button className="w-full bg-red-600 hover:bg-blue-700 text-white font-semibold py-2 rounded-lg transition-all duration-300">
                   {user ? "Profile" : "Login"}
@@ -285,6 +351,24 @@ const Navbar = () => {
                     Signup
                   </button>
                 </Link>
+              )}
+              {user && (
+                <div className="relative overflow-hidden grou text-white
+                    bg-red-600 text-center p-2 rounded-lg ">
+                  {/* Gradient Hover Effect */}
+                  <span className=" top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-red-300 to-transparent opacity-50 group-hover:left-full transition-all duration-700 ease-in-out pointer-events-none"></span>
+
+                  {/* Logout Button */}
+                  <span
+                    className=" z-10 px-6 py-3  font-semibold rounded-md shadow-lg transition duration-300 ease-in-out transform hover:scale-105"
+                    onClick={() => {
+                      handleLogout(); // Clear session
+                      navigate("/"); // Redirect to homepage
+                    }}
+                  >
+                    Logout
+                  </span>
+                </div>
               )}
             </li>
           </ul>

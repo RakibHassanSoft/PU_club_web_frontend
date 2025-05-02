@@ -22,6 +22,11 @@ import CTest from "./pages/CTest/CTest.jsx";
 
 import { QueryClientProvider } from '@tanstack/react-query';
 import queryClient from './queryClient'; // Import the queryClient
+import MyLearning from "./pages/MyLearning/MyLearning.jsx";
+import AllSolvers from "./pages/CurrentProbelmSolver/AllSolvers.jsx";
+import UserActions from "./pages/Admin/UserActions/UserActions.jsx";
+import ProtectedRoute from "./pages/AuthRoute/ProtectedRoute.jsx";
+import Chat from "./pages/AIChat/Chat.jsx";
 
 
 const router = createBrowserRouter([
@@ -68,6 +73,22 @@ const router = createBrowserRouter([
       { 
         path:'/roadmap',
         element:<DSARoadmap/>,
+      },
+      { 
+        path:'/my-learnings',
+        element:<MyLearning/>,
+      },
+      { 
+        path:'/all-solvers',
+        element:<AllSolvers/>,
+      },
+      { 
+        path:'/handle-users',
+        element:<UserActions/>,
+      },
+      { 
+        path:'/pu-ai',
+        element:<Chat/>,
       },
       // { 
       //   path:'/courses',

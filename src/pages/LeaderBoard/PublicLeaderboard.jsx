@@ -44,16 +44,16 @@ export default function Leaderboard() {
     setSortOrder((prev) => (prev === "asc" ? "desc" : "asc"));
   };
 
-   if (data.length === 0) {
-    return (
-      <div className="min-h-screen bg-white max-w-7xl m-auto p-6">
-        <h1 className="text-3xl font-bold text-red-600 mb-6">
-          🏆 Public Leaderboard
-        </h1>
-        <div className="text-red-500 font-semibold">No data available.</div>
-      </div>
-    );
-  }
+  // if (!data || data.length === 0)
+  //   return (
+  //     <div className="min-h-screen bg-white max-w-7xl m-auto p-6">
+  //       <h1 className="text-3xl font-bold text-red-600 mb-6">
+  //         🏆 Public Leaderboard
+  //       </h1>
+  //       <div className="text-red-500 font-semibold">No data available.</div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="min-h-screen bg-white max-w-7xl m-auto p-6">
@@ -91,8 +91,8 @@ export default function Leaderboard() {
       )}
 
       {error && (
-        <div className="text-red-500 font-semibold">
-          Failed to load leaderboard.
+        <div className="text-red-500 text-4xl text-center font-semibold">
+          No data to show 
         </div>
       )}
 

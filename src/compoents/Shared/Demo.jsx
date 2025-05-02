@@ -1,44 +1,54 @@
-
-import React, { useState } from 'react';
-import useAxiosData from '../../hook/useAxiosData';
+import React from 'react';
 
 const Demo = () => {
-  const [postBody, setPostBody] = useState({
-    title: 'foo',
-    body: 'bar',
-    userId: 1,
-  });
-
-  const { data, loading, error, mutate } = useAxiosData({
-    secure: false, // Public API
-    method: 'POST',
-    endpoint: '/posts',
-  });
-
-  const handleSubmit = () => {
-    mutate(postBody);
-  };
-
   return (
     <div>
-      <h1>POST to JSONPlaceholder</h1>
-      <button onClick={handleSubmit} disabled={loading}>
-        {loading ? 'Posting...' : 'Submit Post'}
-      </button>
-
-      {error && <p style={{ color: 'red' }}>Error: {error.message}</p>}
-
-      {data && (
-        <div style={{ marginTop: '1rem' }}>
-          <h2>Response:</h2>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-        </div>
-      )}
+      
     </div>
   );
 };
 
 export default Demo;
+// import React, { useState } from 'react';
+// import useAxiosData from '../../hook/useAxiosData';
+
+// const Demo = () => {
+//   const [postBody, setPostBody] = useState({
+//     title: 'foo',
+//     body: 'bar',
+//     userId: 1,
+//   });
+
+//   const { data, loading, error, mutate } = useAxiosData({
+//     secure: false, // Public API
+//     method: 'POST',
+//     endpoint: '/posts',
+//   });
+
+//   const handleSubmit = () => {
+//     mutate(postBody);
+//   };
+
+//   return (
+//     <div>
+//       <h1>POST to JSONPlaceholder</h1>
+//       <button onClick={handleSubmit} disabled={loading}>
+//         {loading ? 'Posting...' : 'Submit Post'}
+//       </button>
+
+//       {error && <p style={{ color: 'red' }}>Error: {error.message}</p>}
+
+//       {data && (
+//         <div style={{ marginTop: '1rem' }}>
+//           <h2>Response:</h2>
+//           <pre>{JSON.stringify(data, null, 2)}</pre>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Demo;
 
 
 // import React, { useState } from 'react';
@@ -140,8 +150,8 @@ export default Demo;
 //   });
 //   console.log(data)
 
-  // if (loading) return <div>Loading...</div>;
-  // if (error) return <div>Error: {error.message}</div>;
+//   if (loading) return <div>Loading...</div>;
+//   if (error) return <div>Error: {error.message}</div>;
 
 //   return (
 //     <div>

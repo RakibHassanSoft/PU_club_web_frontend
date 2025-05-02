@@ -4,8 +4,13 @@ import Lottie from "react-lottie";
 import animationData from "../../../public/lottie-animation.json";
 import { Link, useNavigate } from "react-router-dom";
 import useAxiosData from "../../hook/useAxiosData";
+import useAxiosPublic from "../../hook/useAxiosPublic";
+import useUser from "../../hook/useUser";
 
 const Login = () => {
+  const { isAdmin, loading: userLoading, error: userError, refetch } = useUser();
+
+  const axiosInstance = useAxiosPublic();
   const navigation = useNavigate();
   const [loginData, setLoginData] = useState({
     email: "",
@@ -26,47 +31,46 @@ const Login = () => {
   });
   // console.log(data);
 
+  loading && <p>Loading...</p>;
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    // console.log("clicked");
+  
     try {
-      // Trigger the POST request with login data
-      await mutate(loginData);
-       if(data?.isVerified === true){
-        
-         // Successful login, save email in sessionStorage
-         sessionStorage.setItem("userEmail", data.email); // Store user email in sessionStorage
-   
-         if (data.email !== "" && data.email !== undefined) {
-           // Show success alert with SweetAlert
-           navigation("/"); // Redirect to home page
-           Swal.fire({
-             title: "Login Successful",
-             text: `Welcome, ${data ? data?.fullName : "Buddy"}!`,
-             icon: "success",
-             confirmButtonText: "Okay",
-           });
-         }
-       }else{
-          // Show error alert with SweetAlert
-          Swal.fire({
-            title: "Login Failed",
-            text: "Your account is not verified yet.",
-            icon: "alert",
-            confirmButtonText: "Okay",
-          });
-       }
+      const res = await axiosInstance.post("/auth/login", loginData); // Replace with your actual base URL
+  
+      const data = res.data;
+      refetch(); // Refetch user data after login
+      if (data.isVerified) {
+        sessionStorage.setItem("userEmail", data.email);
+  
+        Swal.fire({
+          title: "Login Successful",
+          text: `Welcome, ${data?.fullName || "Buddy"}!`,
+          icon: "success",
+          confirmButtonText: "Okay",
+        }).then(() => {
+          navigation("/");
+        });
+      } else {
+        Swal.fire({
+          title: "Login Failed",
+          text: "Your account is not verified yet.",
+          icon: "warning",
+          confirmButtonText: "Okay",
+        });
+      }
     } catch (err) {
-      // Show error alert with SweetAlert
+      console.error(err);
       Swal.fire({
         title: "Login Failed",
-        text:
-          err.data?.error || "Something went wrong, please try again.",
+        text: err.response?.data?.error || "Something went wrong, please try again.",
         icon: "error",
         confirmButtonText: "Okay",
       });
     }
   };
+  
 
   const lottieOptions = {
     loop: true,
@@ -90,9 +94,9 @@ const Login = () => {
         </div>
 
         {/* Form Section */}
-        <div className="w-full md:w-1/2 p-8">
+        <div className="w-full md:w-1/2 pl-4 pr-4 lg:pl-6 lg:pr-6">
           <h2 className="text-3xl font-bold text-center text-red-800 mb-2">
-            PU Programming Solving Club
+            PU Programming Club
           </h2>
           <h2 className="text-3xl font-bold text-center text-red-600 mb-8 ">
             Login
@@ -135,12 +139,12 @@ const Login = () => {
           </form>
 
           <div className="text-sm text-gray-600 mt-4 text-center">
-            <p>
+            {/* <p>
               Forgot password?{" "}
               <span className="text-red-600 font-semibold hover:underline cursor-pointer">
                 Reset
               </span>
-            </p>
+            </p> */}
             <p className="mt-2">
               Don't have an account?{" "}
               <Link

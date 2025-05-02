@@ -5,6 +5,7 @@ import Footer from '../../compoents/Footer/Footer';
 import { FaWhatsapp } from 'react-icons/fa';
 import ScrollToTop from '../../compoents/Shared/ScrollToTop';
 import useAuth from '../../hook/useAuth';
+import CurrentProblemSolver from '../CurrentProbelmSolver/CurrentProbelmSolver';
 
 const Main = () => {
   const user = useAuth();
@@ -17,8 +18,11 @@ const Main = () => {
 
   return (
     <div className="flex flex-col min-h-screen font-sans">
+    
       <ScrollToTop /> {/* Add here to always scroll on route change */}
       <Navbar />
+      <CurrentProblemSolver/>
+
       <div className="flex-grow">
         <Outlet />
       </div>

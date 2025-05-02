@@ -3,6 +3,7 @@ import Cookies from "js-cookie";  // Import js-cookie library
 
 const axiosPrivate = axios.create({
   baseURL: 'http://localhost:5000/api/v1' // Or your local development URL
+  // baseURL: 'https://pu-club-web-backend.onrender.com/api/v1' // Or your local development URL
 });
 
 // Add a request interceptor to attach the token from cookies

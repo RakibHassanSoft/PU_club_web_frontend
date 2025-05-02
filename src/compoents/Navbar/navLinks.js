@@ -24,6 +24,7 @@ export const navLinks = [
     { name: 'Ranking', path: '/ranking' },
     { name: 'Resources ', path: '/resources' },
     { name: 'Roadmap', path: '/roadmap' },
+    { name: 'PU-AI', path: '/pu-ai' },
     // { name: 'Our Mentors', path: '/mentors' },
 
   ];
